@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Chelsea Survey</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <h1 id="title">Chelsea Survey Form</h1>
+  <p id="description">Silahkan isi formulir ini, terima kasih.</p>
+
+  <form id="survey-form">
+    <label for="name" id="name-label">
+      Nama
+      <input type="text" id="name" placeholder="Masukkan Nama" required>
+    </label>
+
+    <label for="email" id="email-label">
+      Email
+      <input type="email" id="email" placeholder="Masukkan Email" required>
+    </label>
+
+    <label for="number" id="number-label">
+      Umur
+      <input type="number" id="number" placeholder="Berapa umur anda?" min="15" max="40">
+    </label>
+
+    <label for="dropdown" id="dropdown-label">
+      Dari manakah anda mengetahui tentang klub CHELSEA.FC ?
+      <select id="dropdown">
+        <option>Instagram</option>
+        <option>Facebook</option>
+        <option>Twitter</option>
+        <option>Teman</option>
+        <option>Website</option>
+      </select>
+    </label>
+
+    <label for="thebestplayer" id="player-label">Pemain terbaik CHELSEA.FC saat ini ?</label>
+      
+      <input type="radio" name="thebestplayer" value="1" checked> Eduard Mendy <br>
+      <input type="radio" name="thebestplayer" value="2"> Mason Mount <br>
+      <input type="radio" name="thebestplayer" value="3"> N'golo Kante  <br>
+      <input type="radio" name="thebestplayer" value="4"> Cesar Azpilicueta <br>
+      <input type="radio" name="thebestplayer" value="5"> Jorginho  <br>
+      <input type="radio" name="thebestplayer" value="6"> Romelu Lukaku <br>
+
+      <br><br>
+      <label for="coachsuccess" id="coachsuccess-label">Pelatih Sukses CHELSEA.FC sepanjang masa ?</label>
+
+      <input type="checkbox" value="jose-mourinho"> Jose Mourinho  <br>
+      <input type="checkbox" value="andres-villas-boas"> Andres Villas Boas <br>
+      <input type="checkbox" value="carlo-ancelotti"> Carlo Ancelloti  <br>
+      <input type="checkbox" value="roberto-dimatteo"> Roberto Di Matteo <br>
+      <input type="checkbox" value="maurio-sarri"> Maurio Sarri <br>
+      <input type="checkbox" value="thomas-tuchel"> Thomas Tuchel <br>
+      <input type="checkbox" value="rafael-benitez"> Rafael Benitez <br>
+      <input type="checkbox" value="antonio-conte"> Antonio Conte <br>
+      <input type="checkbox" value="claudio-ranieri"> Claudio Ranieri <br>
+
+      <br><br>
+
+      <label for="comments" id="comments-label">
+        Ada Komentar untuk saran ?
+        <textarea id="comments" cols="30" rows="10"></textarea>
+      </label>
+
+      <button id="submit" type="submit">Submit</button>
+  </form>
+  <script src="https://cdn.freecodecamp.org/testable-projects-fcc/v1/bundle.js"></script>
+</body>
+</html>
